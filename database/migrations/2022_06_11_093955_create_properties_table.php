@@ -19,7 +19,7 @@ class CreatePropertiesTable extends Migration
             $table->string('type');
             $table->timestamps();
 
-            $table->foreign('item_id')->references('id')->on('items');
+            $table->foreign('item_id')->references('id')->on('items')->onDelete('cascade');;
 
         });
 
