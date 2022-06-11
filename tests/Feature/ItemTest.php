@@ -123,7 +123,7 @@ class ItemTest extends TestCase
 
         $response = $this->withHeaders([
             'Authorization' => 'Bearer '. $token,
-        ])->json('DELETE','api/item/8');
+        ])->json('DELETE','api/item/9');
 
         //Write the response in laravel.log
         \Log::info(1, [$response->getContent()]);
